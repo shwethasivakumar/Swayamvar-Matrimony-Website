@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+background-color:lightpink;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid rgba(224, 11, 178, 0.514);
+  background-color: rgba(224, 11, 178, 0.514);
+  width: 30%;
+  height: 300px;
+}
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 200px;
+  right: 0;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color:yellow;
+  font-size: xx-large;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 22px 16px;
+  height:300px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+ 
+  padding: 25px 400px;
+  border: 1px solid #ccc;
+width:100%;
+  border-left: none;
+  height: 900px;
+  display: none;
+  background-color: rgba(224, 11, 178, 0.514); text-emphasis: right 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+text-align: center;
+color:white;
+font-size:x-large;
+text-transform: capitalize;
+letter-spacing: 1px;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+
+  
+<div class="tab">
+
+    <button class="tablinks" onclick="openCity(event, 'London')" style="font-family:'Dancing Script', cursive;color:red;font-style: italic;font-size: 5em;" >ABOUT ME</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')" style="font-family:'Dancing Script', cursive;color:red;font-style: italic;font-size: 5em;">MY PARTNER</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')" style="font-family:'Dancing Script', cursive;color:red;font-style: italic;font-size: 5em;">ZODIAC</button>
+</div>
+
+<div id="London" class="tabcontent">
+
+ <p style="font-family:'Dancing Script', cursive;color:black;font-style: italic;">
+    Hi! I am putting this profile on behalf of my child. MY  Child has done  BE (Elect) from Govt Engg college Jabalpur and Executive MBA from Grate lake Chennai. They was former employee of a fortune 200 design consultancy firm. Fluor in Gurgaon and had around 4yrs experience as a Design engineer (Electrical). After completing MBA this March is currently working at Accenture Operations in Banglore. They is independent, open-minded and a friendly individual. They believes in maintaining a healthy balance between her professional and personal life. My Child loves to travel and read.My Child is looking for a well educated and mature life partner who is a modern outlook towards life but the old school thoughts intact. The one who can understand  and support  and  decisions (definitely not the wrong ones).
+
+ <ol>
+
+ <li>
+ 
+
+   
+    Masters degree in Management</li><li></li>
+
+
+    Sr. Manager / Manager</li><li>
+        Earns INR 10 Lakh to 15 Lakh annuallyy</li>
+</ol>
+</div>
+
+<div id="Paris" class="tabcontent">
+
+
+
+Age
+27 to 30<br>
+Height:
+5' 6"(167cm) to 6' 0"(182cm)<br>
+Marital Status:
+Never Married<br>
+Gothra / Gothram:
+Don't include my Gothra<br>
+Religion / Community:
+Hindu: Brahmin - Kanyakubja, Hindu: Brahmin - Saryuparin<br>
+Mother Tongue:
+Hindi <br>
+
+Education:
+Bachelors / Undergraduate, Doctorate, Masters</br>
+Working With:
+Private Company, Government / Public Sector<br>
+Annual Income
+Above INR 10 lakhs</br></div>
+
+
+
+
+</div>
+
+<div id="Tokyo" class="tabcontent">
+
+    <p style="font-family:'Amatic SC', cursive;color:white;font-size:35px;font-weight: 500;text-align: center;">
+
+Zodiac Sign	: Taurus<br>
+Birth Stone:		Emrald<br>
+Birth Flower:		Sunflower / Lily of the Valley<br>
+Planet:	Venus<br>
+Color:		Pink<br>
+Element:		Earth<br>
+Famous Personality:		Karl Marx (Revolutionary)<br>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

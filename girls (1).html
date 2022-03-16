@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+      * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://wallpapercave.com/wp/wp4717867.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+ 
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color:tomato;
+  
+
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 100px;
+  text-decoration: none;
+}
+
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 350px; 
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+right: 0;
+  background-color: palevioletred;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: lightcoral;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+
+
+
+
+
+
+        .button {
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 14px 138px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 100 100;
+  cursor: pointer;
+}
+.open{
+  color: gold;
+  font-size:40px ;
+  
+}
+.open:hover { color: white;}
+        </style>
+</head>
+<body >
+  <div class="topnav">
+  <div class="open"><span onclick="openNav()"> MYLIST 	</span>  
+   <a  target="_parent" href="D:\Raghul\New folder\UI Project\swayamvar.html">HOME</a>
+   <a href="#">PLANS</a>
+   <a  class="topnav" onclick="mf()">NEW MATCHES</a>
+    <a  onclick="myFunction()" >LOGOUT</a> 
+ 
+  
+  
+  
+  
+  </div>
+ 
+
+
+</div>
+
+<div class="card">
+  <a  href="D:\Raghul\java\b11.html">
+  <img src="https://www.desktopbackground.org/p/2012/08/24/441726_all-4u-wallpaper-shreya-ghoshal-images-hd-wallpapers_1437x1554_h.jpg"  style="width:100%"></a>
+  <h1>Shreya</h1>
+  <p class="title">Software Engineer</p>
+  <p> Microsoft</p>
+
+
+  <p><button    onclick="ok()"
+    >Contact</button></p>
+</div>
+
+<div class="card">
+  <a  href="D:\Raghul\java\b22.html">
+  <img src="https://gallery.andhimazhai.com/albums/userpics/10001/normal_actress-priya-bhavani-shankar-latest-hd-stills-568ed20.jpg"  style="width:100%">
+  </a>
+  <h1>Anjana</h1>
+  <p class="title">Probationary officer</p>
+  <p> State Bank Of India</p>
+  
+  <p><button>Contact</button></p>
+</div>
+<div class="card">
+  <a  href="D:\Raghul\java\b33.html">
+  <img src="https://images5.alphacoders.com/617/617714.jpg" alt="John" style="width:100%"></a>
+
+  <h1>Priya</h1>
+  <p class="title">STUDENT</p>
+  <p>Cost Managing Accountant</p>
+
+  <p><button    onclick="ok()"
+    >Contact</button></p>
+</div>
+<div class="card">
+  <a  href="D:\Raghul\java\b44.html">
+  <img src="https://www.25cineframes.com/images/gallery/2017/09/kalyani-priyadarshan-new-latest-hd-photos/40-Kalyani-Priyadarshan-New-Latest-HD-Photos-Hello-Movie-Heroine-Kalyani-Priyadarshan-Photo-Shoot-Images.jpg"  style="width:100%"></a>
+  <h1>Monisha</h1>
+  <p class="title">Legal counsel</p>
+  <p>Axis Bank</p>
+  
+  <p><button    onclick="ok()"
+    >Contact</button></p>
+</div>
+<div class="card">
+  <a  href="D:\Raghul\java\b55.html">
+  <img src="https://gallery.southindianactress.in/2020/01/Yashika-Aannand-saree-stills-7.jpg "  style="width:100%"></a>
+  <h1>Dharshini</h1>
+  <p class="title"> Employee in design consultancy firm</p>
+
+ 
+  <p><button    onclick="ok()"
+    >Contact</button></p>
+</div>
+<div class="card">
+  <a  href="D:\Raghul\java\b66.html">
+  <img src="http://tbgbridalstore.com/wp-content/uploads/2018/12/compressed5-1.jpg"  style="width:100%"></a>
+  <h1>Anjali</h1>
+  <p class="title">Software Professional</p>
+  <p>BOSCH</p>
+
+  <p><button    onclick="ok()"
+    >Contact</button></p>
+</div>
+<div class="card">
+  <a  href="D:\Raghul\java\b77.html">
+  <img src="https://i1.wp.com/www.actressmedia.com/wp-content/uploads/2019/06/IMG_20190622_185638-1.jpg?resize=689%2C1024&ssl=1"  style="width:100%"></a>
+  <h1>Ritu Varma</h1>
+  <p class="title">Student</p>
+  <p>B.Tech Cse</p>
+ 
+  <p><button    onclick="ok()"
+    >Contact</button></p>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a  onclick="mf()">ACCEPTED</a>
+  <a  onclick="mf()">VISITORS</a>
+  <a  onclick="mf()">REQUESTS</a>
+  <a  onclick="mf()">SENT</a>
+  <a onclick="mf()">DELETED</a>
+</div>
+<script>function myFunction() {
+window.location.href = "http://www.google.com";
+}</script>
+    
+<script>  function mf() {
+  alert("EMPTY");
+}
+</script>
+<script>  function ok() {
+  alert("YOU HAVE TO UPGRADE YOUR PLAN");
+}
+</script>
+<script>
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</body>
+</html>

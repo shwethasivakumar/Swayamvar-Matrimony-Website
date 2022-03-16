@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration form creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <script type="text/javascript" src="gen_validatorv4.js">
+          function validateform(){
+              var gender=document.getElementById("select").value;
+              localStorage.setItem("Gender",gender);
+              var frmvalidator=new Validator("myform");
+              frmvalidator.addValidation("text1","alpha"," Alphabets only");
+              frmvalidator.addValidation("text1","minlen=4"," Enter your First name");
+              frmvalidator.addValidation("text2","alpha","Alphabets only");
+              frmvalidator.addValidation("text2","minlen=4","Enter your Last name");
+              frmvalidator.addValidation("select1","dontselect=000"," select gender");
+              frmvalidator.addValidation("select2","dontselect=000"," select religion");
+          }
+        </script>
+        <div class="register">
+         <form method="POST" id="register" action="next3.html " name="myform">
+          <h2>Great ! Now some basic details</h2>
+          <label> First Name :</label><br>
+          <input type="text" class="input-box" name="text1" id="name"
+           placeholder="First name"><br>
+          <label> Last Name :</label><br>
+          <input type="text" class="input-box" name="text2" id="name1"
+           placeholder="Last name"><br>
+          <label>Date of Birth:</label><br>
+          <input type="date" class="input-box" name="text3" id="date"
+          placeholder="Date of Birth"><br>
+          <label> Religion :</label><br>
+          <select id="select1" class="select" name="select2">
+              <option value="000">select</option>
+              <option>Hindus</option>
+              <option>Muslims</option>
+              <option>Christianity</option>
+              <option>Islam</option>
+              <option>Sikhism</option>
+          </select><br>  
+          <input type="submit" class="button" value="continue" onclick="validateform()">
+         </form>   
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration form creation</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+    <body>
+        <script type="text/javascript" src="https://searchcode.com/codesearch/raw/85610038/"></script>
+              <script>
+                function validateform(){
+                
+                    var frmvalidator=new Validator("myform");
+                    frmvalidator.addValidation("email","email"," invalid email address");
+                    frmvalidator.addValidation("email","minlen=5","enter valid email address");
+                    frmvalidator.addValidation("password","alphanumeric","Alphabetic and numbers only");
+                    frmvalidator.addValidation("password","minlen=6","password must be atleast 6 chracters");
+                    frmvalidator.addValidation("mnum","numeric"," numbers  only");
+                    frmvalidator.addValidation("mnum","minlen=10","enter the valid phone number");
+
+                    frmvalidator.addValidation("cb","shouldselchk=on","Select the check box");
+                    frmvalidator.addValidation("password1","eqelmnt=password","The confirm password is not as entered password")
+                }
+              </script>
+        <div class="register">
+         <form method="GET" id="register" action="next.html" name="myform">
+          <h2>Let's set up your account,While we<br>find matches for you !</h2>
+          <label>Enter your Email_ID </label><br>
+          <input type="email" class="input-box" name="email" id="name"
+          placeholder="Email-ID"><br>
+          <label>Create a password </label><br>
+          <input type="password" class="input-box"  name="password"
+          placeholder="Password"><br>
+          <label>Re-Enter password</label>
+          <input type="password" class="input-box" name="password1"
+          placeholder="password"><br>
+          <label> Mobile Number </label><br>
+          <input type="number" class="input-box" name="mnum" id="num" 
+          placeholder="Mobile Number"><br>
+         <p><span><input type="checkbox" name="cb"></span>I agree to the terms of services</p>
+       <input type="submit" value="Continue" class="button" onclick="validateform()">
+         </form>
+        </div>
+    </body>
+</html>

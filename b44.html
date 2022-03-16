@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+background-color:lightpink;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid rgba(224, 11, 178, 0.514);
+  background-color: rgba(224, 11, 178, 0.514);
+  width: 30%;
+  height: 300px;
+}
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 200px;
+  right: 0;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color:yellow;
+  font-size: xx-large;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 22px 16px;
+  height:300px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+ 
+  padding: 25px 400px;
+  border: 1px solid #ccc;
+width:100%;
+  border-left: none;
+  height: 900px;
+  display: none;
+  background-color: rgba(224, 11, 178, 0.514); text-emphasis: right 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+text-align: center;
+color:white;
+font-size:x-large;
+text-transform: capitalize;
+letter-spacing: 1px;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+
+  
+<div class="tab">
+
+  <button class="tablinks" onclick="openCity(event, 'London')" style="font-family:'Dancing Script', cursive;color:red;font-style: italic;font-size: 5em;" >ABOUT ME</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')" style="font-family:'Dancing Script', cursive;color:red;font-style: italic;font-size: 5em;">MY PARTNER</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')" style="font-family:'Dancing Script', cursive;color:red;font-style: italic;font-size: 5em;">ZODIAC</button>
+</div>
+
+<div id="London" class="tabcontent">
+
+ <p style="font-family:'Dancing Script', cursive;color:black;font-style: italic;">
+    I am seeking a suitable partner for my Sibiling.
+    My Sibiling has completed her Bachelors in Law from one of the National Law Schools and is currently working with a leading private sector Bank as their Legal counsel. We are from upper middle class family and have been raised up in moderate environment.</p>
+ <ol>
+ <li>
+ 
+
+   
+Bachelors degree in Law</li><li></li>
+
+Lawyer with a private company</li><li>
+Earns INR 15 Lakh to 20 Lakh annually</li>
+</ol>
+</div>
+
+<div id="Paris" class="tabcontent">
+
+
+
+Age
+29 to 34<br>
+Height:
+5' 7"(170cm) to 6' 2"(187cm)<br>
+Marital Status:
+Never Married<br>
+Gothra / Gothram:
+Don't include my Gothra<br>
+Religion / Community:
+Hindu<br>
+Mother Tongue:
+Tamil <br>
+State Living in:
+Delhi-NCR, Maharashtra</br>
+Annual Income:
+INR 15 lakhs to 50 lakhs</br></div>
+
+
+
+
+</div>
+
+<div id="Tokyo" class="tabcontent">
+
+  <p style="font-family:'Amatic SC', cursive;color:white;font-size:35px;font-weight: 500;text-align: center;">
+
+Zodiac Sign	: 	Aries <br>
+Birth Stone:		Diamond<br>
+Birth Flower:		Daisy / Sweet Pea / Tulip<br>
+Planet:	Mars<br>
+Color:		Red<br>
+Element:	Fire<br>
+Famous Personality:	Adolf Hitler (Dictator)<br></p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

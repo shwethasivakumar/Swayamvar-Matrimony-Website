@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    background-image: url("wedding.jpg");
+    background-size: cover;
+    font-family: 'Roboto',sans-serif;
+    background-position: center;
+                                               
+ }
+ .tooltip-2 {
+    display: none;
+}
+
+.sign-in-form2:focus-within .tooltip-2 {
+    display:block;
+}
+.sign-in-form1:focus-within .tooltip-2 {
+    display:block;
+}
+.sign-in-form
+  {
+    width: 350px;
+    padding:20px;
+    border-radius: 10px;
+    margin: 8% auto 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey; 
+    background-color: #fff;
+ }                    
+.sign-in-form h1
+ {
+    color: skyblue;
+    margin-bottom: 30 px;
+ }
+.input-box
+ {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px -10px;
+    width: 100%;
+    height:20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    outline: none;
+ }
+ .input-box:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+ }
+.button
+ {
+    color: #000;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: lightgray;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    background: #fff;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px 0;
+    outline: none;
+    cursor: pointer;
+ }
+.signin-btn
+ {
+    background-color: #4285f4;
+}
+hr
+{
+    margin-top: 20px;
+    width: 80%;
+}
+.or
+{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+.button:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+img
+{
+     width: 70px;
+     margin-top: -50px;
+     border-radius: 50%;
+}
+.b1{
+    color: #21afde;
+}
+.h1{
+    font-size: x-small;
+    color: #000;
+    text-align: left;
+}
+.google-button {
+  height: 40px;
+  border-width: 0;
+  background: white;
+  color: #000;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  transition-property: background-color, box-shadow;
+  padding: 0;
+}
+.google-button:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+    
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  initial-letter-align:left;
+  margin: 0 0;
+  width: 19px;
+  height: 19px;
+  box-sizing: border-box;
+
+}
+.google-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 15px;
+  font-family: 'Roboto',arial,sans-serif;
+  cursor: pointer;  
+}
+
